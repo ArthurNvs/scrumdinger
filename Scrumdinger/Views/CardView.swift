@@ -8,36 +8,36 @@
 import SwiftUI
 
 struct CardView: View {
-    let dailyScrum: DailyScrum
+    let scrum: DailyScrum
     var body: some View {
         VStack(alignment: .leading) {
-            Text(dailyScrum.title)
+            Text(scrum.title)
                 .font(.headline)
         Spacer()
         HStack {
-            Label("\(dailyScrum.attendees.count)", systemImage: "person.3")
+            Label("\(scrum.attendees.count)", systemImage: "person.3")
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel(Text("Attendees"))
-                .accessibilityValue(Text("\(dailyScrum.attendees.count)"))
+                .accessibilityValue(Text("\(scrum.attendees.count)"))
             Spacer()
-            Label("\(dailyScrum.lengthInMinutes)", systemImage: "clock")
+            Label("\(scrum.lengthInMinutes)", systemImage: "clock")
                 .padding(.trailing, 20)
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel(Text("Lengh In Minutes"))
-                .accessibilityValue(Text("\(dailyScrum.lengthInMinutes)"))
+                .accessibilityValue(Text("\(scrum.lengthInMinutes)"))
             }
             .font(.caption)
         }
         .padding()
-        //.foregroundColor(dailyScrum.color.accessibleFontColor)
+        .foregroundColor(scrum.color.accessibleFontColor)
     }
 }
 
 struct CardView_Previews: PreviewProvider {
-    static var dailyScrum = DailyScrum.data[0]
+    static var scrum = DailyScrum.data[0]
     static var previews: some View {
-        CardView(dailyScrum: dailyScrum)
-            .background(dailyScrum.color)
+        CardView(scrum: scrum)
+            .background(scrum.color)
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }

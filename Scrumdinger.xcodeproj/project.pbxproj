@@ -21,6 +21,7 @@
 		E72F38B92726C92B0059CF76 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F38B82726C92B0059CF76 /* MeetingFooterView.swift */; };
 		E72F38BB2726D3EA0059CF76 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F38BA2726D3EA0059CF76 /* AVPlayer+Ding.swift */; };
 		E72F38C72726D8910059CF76 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = E72F38C62726D8910059CF76 /* ding.wav */; };
+		E7B8C39A2729618F003907EE /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B8C3992729618F003907EE /* History.swift */; };
 		E7F9D875272219540053A2BA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F9D874272219540053A2BA /* DetailView.swift */; };
 		E7FD818A271E5AA90047D35A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD8189271E5AA90047D35A /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		E72F38B82726C92B0059CF76 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		E72F38BA2726D3EA0059CF76 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AVPlayer+Ding.swift"; path = "Scrumdinger/Models/AVPlayer+Ding.swift"; sourceTree = SOURCE_ROOT; };
 		E72F38C62726D8910059CF76 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		E7B8C3992729618F003907EE /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		E7F9D874272219540053A2BA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E7FD8189271E5AA90047D35A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = Scrumdinger/Views/CardView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 		E7123EA8271DE59C00669D0E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7B8C3992729618F003907EE /* History.swift */,
 				E72F38BA2726D3EA0059CF76 /* AVPlayer+Ding.swift */,
 				E71B0279271F5C56001342BC /* Color+Codable.swift */,
 				E7123EA6271DE53E00669D0E /* DailyScrum.swift */,
@@ -208,6 +211,7 @@
 			files = (
 				E7123E99271DD95D00669D0E /* MeetingView.swift in Sources */,
 				E71B027C271F61A3001342BC /* ScrumsView.swift in Sources */,
+				E7B8C39A2729618F003907EE /* History.swift in Sources */,
 				E72F38B1272423990059CF76 /* EditView.swift in Sources */,
 				E72F38BB2726D3EA0059CF76 /* AVPlayer+Ding.swift in Sources */,
 				E72F38B32724BB060059CF76 /* MeetingHeaderView.swift in Sources */,

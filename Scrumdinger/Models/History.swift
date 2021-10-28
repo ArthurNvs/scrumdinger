@@ -10,7 +10,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 import Foundation
 
-struct History: Identifiable {
+struct History: Identifiable, Codable {
     let id: UUID
     let date: Date
     var attendees: [String]

@@ -81,4 +81,3 @@ extension Color: Codable {
         return lightness >= 2
     }
 }
-

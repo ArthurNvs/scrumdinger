@@ -15,6 +15,8 @@
 		E71A51A1272BF2E10088D8EE /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71A51A0272BF2E10088D8EE /* MeetingTimerView.swift */; };
 		E71B027A271F5C56001342BC /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71B0279271F5C56001342BC /* Color+Codable.swift */; };
 		E71B027C271F61A3001342BC /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71B027B271F61A3001342BC /* ScrumsView.swift */; };
+		E727314A272E948900126FBD /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7273149272E948900126FBD /* SpeechRecognizer.swift */; };
+		E7273152272EA0F100126FBD /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7273151272EA0F100126FBD /* HistoryView.swift */; };
 		E72F38B1272423990059CF76 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F38B0272423990059CF76 /* EditView.swift */; };
 		E72F38B32724BB060059CF76 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F38B22724BB060059CF76 /* MeetingHeaderView.swift */; };
 		E72F38B527257CB60059CF76 /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72F38B427257CB60059CF76 /* ScrumProgressViewStyle.swift */; };
@@ -38,6 +40,9 @@
 		E71A51A0272BF2E10088D8EE /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
 		E71B0279271F5C56001342BC /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		E71B027B271F61A3001342BC /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		E7273149272E948900126FBD /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		E727314D272E9C9700126FBD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7273151272EA0F100126FBD /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		E72F38B0272423990059CF76 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		E72F38B22724BB060059CF76 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		E72F38B427257CB60059CF76 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
@@ -100,6 +105,7 @@
 		E7123EA8271DE59C00669D0E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7273149272E948900126FBD /* SpeechRecognizer.swift */,
 				E7B8C3992729618F003907EE /* History.swift */,
 				E72F38BA2726D3EA0059CF76 /* AVPlayer+Ding.swift */,
 				E71B0279271F5C56001342BC /* Color+Codable.swift */,
@@ -118,6 +124,7 @@
 				E7F9D874272219540053A2BA /* DetailView.swift */,
 				E7123E98271DD95D00669D0E /* MeetingView.swift */,
 				E71A51A0272BF2E10088D8EE /* MeetingTimerView.swift */,
+				E7273151272EA0F100126FBD /* HistoryView.swift */,
 				E72F38B22724BB060059CF76 /* MeetingHeaderView.swift */,
 				E72F38B0272423990059CF76 /* EditView.swift */,
 				E72F38B82726C92B0059CF76 /* MeetingFooterView.swift */,
@@ -132,6 +139,7 @@
 				E72F38B427257CB60059CF76 /* ScrumProgressViewStyle.swift */,
 				E72F38C52726D8910059CF76 /* audios */,
 				E7123E9A271DD96100669D0E /* Assets.xcassets */,
+				E727314D272E9C9700126FBD /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -218,9 +226,11 @@
 				E7123E99271DD95D00669D0E /* MeetingView.swift in Sources */,
 				E71B027C271F61A3001342BC /* ScrumsView.swift in Sources */,
 				E7B8C39A2729618F003907EE /* History.swift in Sources */,
+				E727314A272E948900126FBD /* SpeechRecognizer.swift in Sources */,
 				E72F38B1272423990059CF76 /* EditView.swift in Sources */,
 				E72F38BB2726D3EA0059CF76 /* AVPlayer+Ding.swift in Sources */,
 				E7B8C39C27296D62003907EE /* ScrumData.swift in Sources */,
+				E7273152272EA0F100126FBD /* HistoryView.swift in Sources */,
 				E71A51A1272BF2E10088D8EE /* MeetingTimerView.swift in Sources */,
 				E72F38B32724BB060059CF76 /* MeetingHeaderView.swift in Sources */,
 				E7123EA7271DE53E00669D0E /* DailyScrum.swift in Sources */,
@@ -364,11 +374,11 @@
 				DEVELOPMENT_TEAM = NVL8V53A55;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_FILE[sdk=*]" = Scrumdinger/App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,11 +404,11 @@
 				DEVELOPMENT_TEAM = NVL8V53A55;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_FILE[sdk=*]" = Scrumdinger/App/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
